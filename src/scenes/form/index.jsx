@@ -149,7 +149,7 @@ const Form = () => {
 const phoneRegExp =
   /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
 
-//   This code defines a validation schema using Yup, a JavaScript schema builder for value parsing and validation.
+//   This code defines the validation schema using Yup, a JavaScript schema builder for value parsing and validation.
 
 // In this case, the validation schema is named checkoutSchema and it specifies the validation rules for the form fields. The schema is defined as an object with keys that match the form field names, and values that are Yup validation objects. Each validation object specifies the rules and constraints for the corresponding form field.
 

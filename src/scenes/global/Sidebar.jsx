@@ -42,22 +42,23 @@ const Sidebar = () => {
   const [selected, setSelected] = useState("Dashboard");
 
   return (
+    // Styling the sidebar
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+          background: `${colors.primary[400]} !important`, // Changed the background
         },
         "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
+          backgroundColor: "transparent !important", // No Icon Wrapper so we set transparent
         },
         "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
+          padding: "5px 35px 5px 20px !important", // modifying padding
         },
         "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
+          color: "#868dfb !important", // changing the color of the inner items when hovered over
         },
         "& .pro-menu-item.active": {
-          color: "#6870fa !important",
+          color: "#6870fa !important", // color of the current active item
         },
       }}
     >
@@ -72,6 +73,7 @@ const Sidebar = () => {
               color: colors.grey[100],
             }}
           >
+            {/* When the sidebar is not collapsed we display this stuff */}
             {!isCollapsed && (
               <Box
                 display="flex"
@@ -89,17 +91,21 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
+          {/* When the sidebar is not collapsed we display this stuff */}
           {!isCollapsed && (
+            // The Container for the image and name together
             <Box mb="25px">
+              {/* The Image */}
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/tmp.png`}
+                  src={`../../assets/user.jpg`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
+              {/* The name with admin salutation */}
               <Box textAlign="center">
                 <Typography
                   variant="h2"
@@ -116,6 +122,7 @@ const Sidebar = () => {
             </Box>
           )}
 
+          {/* One box to contain all the menu items */}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"

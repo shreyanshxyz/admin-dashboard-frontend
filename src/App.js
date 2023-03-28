@@ -13,7 +13,7 @@ import FAQ from "./scenes/faq";
 import Bar from "./scenes/bar";
 import Pie from "./scenes/pie";
 import Line from "./scenes/line";
-// import Geography from "./scenes/geography";
+import Geography from "./scenes/geography";
 
 function App() {
   // the useMode() hook is called to retrieve the current theme and color mode. The useMode() hook is probably defined in the ./theme file and provides the current theme and color mode values based on the user's preferences.
@@ -41,7 +41,7 @@ function App() {
               <Route path="/line" element={<Line />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/calendar" element={<Calendar />} />
-              {/* <Route path="/geography" element={<Geography />} /> */}
+              <Route path="/geography" element={<Geography />} />
             </Routes>
           </main>
         </div>

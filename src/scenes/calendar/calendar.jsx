@@ -17,10 +17,14 @@ import Header from "../../components/Header";
 import { tokens } from "../../theme";
 
 const Calendar = () => {
+  // Theme and color imports
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
+  //   Define a currentEvents state variable using the useState hook. This will hold the events that are currently being displayed in the event list.
   const [currentEvents, setCurrentEvents] = useState([]);
 
+  //   handleDateClick will prompt the user to enter a title for their event and add the event to the calendar.
   const handleDateClick = (selected) => {
     const title = prompt("Please enter a new title for your event");
     const calendarApi = selected.view.calendar;
@@ -37,6 +41,7 @@ const Calendar = () => {
     }
   };
 
+  //   handleEventClick will confirm with the user if they want to delete the clicked event, and then remove it from the calendar.
   const handleEventClick = (selected) => {
     if (
       window.confirm(

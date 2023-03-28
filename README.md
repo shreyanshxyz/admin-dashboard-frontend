@@ -13,7 +13,7 @@ A web-based admin dashboard built with React.
 ## Screenshots
 
 ![Screenshot 1](https://i.postimg.cc/xT8WCPZZ/React-App.png)
-![Screenshot 2](https://i.postimg.cc/fWBGDP8X/download.png)
+![Screenshot 2](https://i.postimg.cc/9M4L2x0P/React-App-1.png)
 
 ## Local Development
 

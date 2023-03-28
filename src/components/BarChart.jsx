@@ -7,6 +7,7 @@ const BarChart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  //   THE REASON WHY WE CREATED A SEPARATE BARCHART COMPONENT INSTEAD IF MAKING A SCENE IS BECAUSE WE NEED TO USE IT IN MORE THAN 1 SPOT.
   //   THE BARCHART CODE IS AUTOMATICALLY GENERATED ON NIVO CHARTS, YOU JUST NEED TO MODIFY THE CHART THERE TO YOUR LIKING AND THEN COPY THE CODE
   return (
     <ResponsiveBar
